@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Caremax mobile | Trung tâm sửa chữa điện thoại</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="./assets/index.css" />
+  <link rel="stylesheet" href="./font-awesome/css/all.css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="./assets/index.js"></script>
+  <script src=" https://code.jquery.com/jquery-3.5.0.min.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <input type="checkbox" hidden id="mobile-search-checkbox" class="search-check-box">
+    <div id="top-header">
+      <div class="container">
+        <div class="container-header">
+          <label for="nav-mobile-input" class="mb-toggle">
+            <i class="fas fa-bars fa-lg size-icon"></i>
+          </label>
+          <a class="logo" href="index.html">
+            <img src="./images/logo.png">
+          </a>
+          <div id="search-bar">
+            <!-- Search form -->
+            <div class="p-1 bg-light rounded rounded-pill shadow-sm">
+              <div class="input-group">
+                <input type="search" placeholder="Nhập sản phẩm muốn tìm kiếm" aria-describedby="button-addon1"
+                  class="form-control border-0 bg-light">
+                <div class="input-group-append">
+                  <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i
+                      class="fa fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-container ml-4">
+            <div class="contact">
+              <a href="tel:0785913939" style="color: #414143;font-size: 15px" class="contact-items">
+                <div>
+                  <i class="fas fa-phone phone-color"> </i>
+                  Liên hệ
+                </div>
+
+                <b>0785913939</b>
+              </a>
+            </div>
+            <div class="email">
+              <!-- <a href="mailto:caremax@gmail.com" style="text-decoration: none; color:#414143;font-size: 15px;" -->
+              <a>
+                <div>
+                  <i class="fas fa-store phone-color"></i>
+                  Địa chỉ
+                </div>
+                <b class="mt-0">67A Trần Quang Khải Quận 1,TP.HCM</b>
+              </a>
+            </div>
+          </div>
+          <div class="mb-search">
+            <label for="mobile-search-checkbox">
+              <i class="fas fa-search size-icon"></i>
+            </label>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="container">
+      <div id="footer-header">
+        <div class="container">
+          <input hidden type="checkbox" name="" id="nav-mobile-input" class="nav__input">
+          <label for="nav-mobile-input" class="nav-overlay"></label>
+          <!-- menu mobile -->
+          <nav id="main-nav">
+            <label for="nav-mobile-input" class="nav-mobile-close">
+              <i class="fas fa-times"></i>
+            </label>
+            <img src="./images/logo.png" class="logo-mobile" />
+            <ul>
+              <li>
+                <div class="menu-item-container">
+                  <a href="#">BẢNG GIÁ ÉP KÍNH
+                    <i class="fas fa-caret-down hide-on-mobile"></i>
+                  </a>
+                  <div onclick="showSubMenuGlass()" class="on-click-dropdown-menu-container"
+                    style="transform: rotate(0);" id="rotateAngleDownGlass">
+                    <i class="fas fa-angle-down angle-down"></i>
+                  </div>
+                </div>
+                <ul class="sub-menu" id="hideOrShowGlass">
+                  <li><a href="#">Ép kính Apple </a></li>
+                  <li><a href="#">Ép kính Samsung</a></li>
+                  <li><a href="#">Ép kinh Huawei</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="menu-item-container">
+                  <a href="#">BẢNG GIÁ THAY MÀN
+                    <i class="fas fa-caret-down hide-on-mobile"></i>
+                  </a>
+                  <div onclick="showSubMenuScreen()" class="on-click-dropdown-menu-container"
+                    style="transform: rotate(0);" id="rotateAngleDownScreen">
+                    <i class="fas fa-angle-down angle-down"></i>
+                  </div>
+                </div>
+                <ul class="sub-menu" id="hideOrShowScreen">
+                  <li><a href="#">Thay màn Apple</a></li>
+                  <li><a href="#">Thay màn Samsung</a></li>
+                  <li><a href="#">Thay màn Huawei</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="menu-item-container">
+                  <a href="#">BẢNG GIÁ LINH KIỆN
+                    <i class="fas fa-caret-down hide-on-mobile"></i>
+                  </a>
+                  <div onclick="showSubMenuAccessories()" class="on-click-dropdown-menu-container"
+                    style="transform: rotate(0);" id="rotateAngleDownAccessories">
+                    <i class="fas fa-angle-down angle-down"></i>
+                  </div>
+                </div>
+                <ul class="sub-menu" id="hideOrShowAccessories">
+                  <li><a href="#">Linh kiện Apple</a></li>
+                  <li><a href="#">Linh kiệm Samsung</a></li>
+                  <li><a href="#">Link kiện Huawei</a></li>
+                </ul>
+              </li>
+
+
+              <li>
+                <div class="menu-item-container">
+                  <a href="#">LIÊN HỆ</a>
+                </div>
+
+              </li>
+              <li>
+                <a href="service.html" class="to-life">LÊN ĐỜI ĐIỆN THOẠI<i class="fas fa-hand-point-right ml-1"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- breadscrum -->
+  <div class="container">
+    <div class="breadcrumb-container">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end breadscrum -->
+  <!-- content -->
+  <div class="container">
+    <section>
+      <h5 class="section-title">Dịch vụ ép kính UY TÍN & CHẤT LƯỢNG</h5>
+      <span style="font-size: 19px; font-weight: bold; color: #2a92d0;"></span>
+      <div class="page-share"></div>
+      <div id="container-logo" class="scrollbar">
+        <div class="wrapper-logo-item">
+          <a href="choose-brand.html">
+            <img src="./images/mobile.png" />
+          </a>
+          <a href="choose-brand.html">Điện thoại</a>
+        </div>
+        <div class="wrapper-logo-item">
+          <a href="choose-brand.html">
+            <img src="./images/tablet.png" />
+          </a>
+          <a href="choose-brand.html">Máy tính bảng</a>
+        </div>
+        <div class="wrapper-logo-item">
+          <a href="choose-brand.html">
+            <img src="./images/smart-watch.png" />
+          </a>
+          <a href="choose-brand.html">Đồng hồ</a>
+        </div>
+      </div>
+    </section>
+    <div style="border-bottom: 1px solid #eaeaea;"></div>
+    <h5 class="section-title mt-3">Đôi nét về dịch vụ ép kính tại CAREMAX</h5>
+  </div>
+  <!-- end content -->
+  <footer>
+    <div class="full-background">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-contact">
+            <img src="./images/logo.png" height="110px" width="220px" />
+            <div class="footer-address">
+              <i class="fas fa-map-marker-alt footer-icon"></i>
+              <p class="address-content">67A Trần Quang Khải, P. Tân Định, Quận 1, TP. HCM</p>
+            </div>
+            <a href="tel:0785913939" style="text-decoration: none; color: #212529;">
+              <div class="footer-address">
+                <i class="fas fa-phone footer-icon"></i>
+                <p class="address-content">0785913939</p>
+              </div>
+            </a>
+
+          </div>
+          <hr class="show-on-mobile" />
+          <div class="footer-work-time">
+            <h3 class="time-work-content">Giờ làm việc</h3>
+            <p class="address-content">Thứ 2 đến thứ 7 : 8h30-19h</p>
+            <p class="address-content">Chủ nhật : 8h30-15h</p>
+          </div>
+          <hr class="show-on-mobile" />
+          <div class="footer-about-us">
+            <h3 class="time-work-content">Về chúng tôi</h3>
+            <div class="about-us-link">
+              <a href="#" class="about-us-content">Giới thiệu</a>
+              <a href="#" class="about-us-content">Chính sách bảo hành</a>
+              <a href="#" class="about-us-content">Đào tạo học viên</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center">Duy trì và phát triển bởi caremax.vn ® </p>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <a href="tel:0785913939" class="container-call">
+    <i class="fas fa-phone-alt call-fixed"></i>
+  </a>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</body>
+
+</html>

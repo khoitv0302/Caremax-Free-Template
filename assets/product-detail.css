@@ -1,0 +1,109 @@
+/* ---------------------------  product detail page --------------------------- */
+a{
+    text-decoration: none !important;
+}
+#main-content{
+    display: flex;
+    width: 100%;
+}
+.product-container{
+    display: flex;
+    flex-basis: 75%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+  
+}
+.detail-image{
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    align-items: center;
+}
+.always-free{
+    width: 80%;
+    height: 50px;
+    border: 1px solid red;
+}
+.detail-content{
+    flex-basis: 55%;
+    border-bottom: 1px solid #d2d2d2;
+}
+.detail-image > img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.detail-content > h1{
+    font-size: 25px;
+    margin: 0;
+    font-weight: bold;
+}
+.price{
+    color: #FF0000;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.wrapper-row-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:5px;
+}
+.wrapper-row-content > img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+.infor-title{
+    margin-right: 10px;
+    font-size: 15px;
+}
+.include{
+    font-style: italic;
+    font-size: 13px;
+}
+.commitment{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.commitment > span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.commitment ul li{
+    padding: 5px;
+}
+.commitment ul li::before{
+    content: "\2022"; 
+    color: #2a92d0;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+.contact-infor{
+    display: flex;
+}
+.contact-infor .contact > a{
+    text-decoration: none;
+     color: #414143;
+     font-size: 14px;
+}
+/* responsive */
+@media(max-width:770px){
+    .product-container{
+        flex-direction: column;
+    }
+    #main-content{
+        flex-direction: column;
+    }
+    .detail-image > img{
+        height: 200px;
+    }
+}
+
+/* end responsive */
+/* ---------------------------  end detail page --------------------------- */
